@@ -882,22 +882,7 @@
             opacity: 0.6;
             transform: translateY(0);
         }
-        @media (max-width: 768px) {
 
-    nav {
-        padding: 10px 16px; /* diminui altura */
-    }
-
-    nav a {
-        font-size: 14px; /* texto menor */
-    }
-
-    nav .menu {
-        gap: 10px; /* menos espaço entre itens */
-    }
-
-}
-        
         @media (max-width: 900px) {
             .header-top {
                 padding: 18px 20px;
@@ -912,6 +897,10 @@
                 justify-content: center;
                 gap: 12px;
                 font-size: 20px;
+            }
+            .header-pill nav a {
+                padding: 6px 8px;
+                font-size: 13px;
             }
 
             .header-top nav a,
@@ -934,7 +923,7 @@
             }
 
             .header-pill nav {
-                flex-wrap: wrap;
+                 flex-wrap: nowrap;
                 justify-content: center;
                 gap: 6px;
                 font-size: 16px;
@@ -1031,24 +1020,23 @@
             .header-pill {
                 top: 10px;
                 width: calc(100% - 16px);
-                padding: 8px 10px;
+                padding: 4px 10px;
                 gap: 8px;
             }
 
             .header-pill nav {
                 width: auto;
-                gap: 4px;
+                gap: 1px;
                 font-size: 14px;
             }
 
             .header-pill nav a {
-                padding: 8px 10px;
+                padding: 4px 10px;
             }
 
             .header-pill .btn-tema {
                 width: 40px;
                 height: 40px;
-                padding: 4px;
             }
 
             .header-pill .btn-tema img {
@@ -1347,6 +1335,22 @@ body.modal-aberto {
     .formulario-contato .campo-full {
         grid-column: auto;
     }
+     .icone-login img {
+        width: 5px;
+        height: 5px;
+        margin-top: 2px;
+    }
+
+    .header-pill .btn-tema {
+        width: 34px;
+        height: 34px;
+    }
+
+    .header-pill .btn-tema img {
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 
