@@ -882,7 +882,22 @@
             opacity: 0.6;
             transform: translateY(0);
         }
+        @media (max-width: 768px) {
 
+    nav {
+        padding: 10px 16px; /* diminui altura */
+    }
+
+    nav a {
+        font-size: 14px; /* texto menor */
+    }
+
+    nav .menu {
+        gap: 10px; /* menos espaço entre itens */
+    }
+
+}
+        
         @media (max-width: 900px) {
             .header-top {
                 padding: 18px 20px;
